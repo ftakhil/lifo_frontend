@@ -29,7 +29,7 @@ const handleSubmit = async(e) => {
 
   let data = {name,email};
 
-  const submit = await axios.post('http://localhost:3001/sign', data)
+  const submit = await axios.post('https://lifo-backend-qyddbhwor-ftakhils-projects.vercel.app/sign', data)
   console.log(submit);
   // You can also send this data to your backend using axios or fetch
   console.log(name,email);
@@ -43,7 +43,7 @@ const handleSubmit = async(e) => {
 let config = {
   method: 'get',
   maxBodyLength: Infinity,
-  url: 'http://localhost:3001/login',
+  url: 'https://lifo-backend-qyddbhwor-ftakhils-projects.vercel.app/login',
   headers: { }
 };
 
